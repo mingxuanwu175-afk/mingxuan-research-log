@@ -7,7 +7,7 @@ const ui = {
   blogEyebrow: 'Archive',
  blogTitle: 'All Posts',
 heroTitle: 'Mingxuan Research Log.',
-heroTitleLine2: 'Learning in public toward AI and AGI research.',
+heroTitleLine2: '',
 viewAll: 'All Posts →',
   readLink: 'Read →',
   postFeed: {
