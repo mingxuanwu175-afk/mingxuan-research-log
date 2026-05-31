@@ -12,24 +12,24 @@ type NavItem = {
 
 const config = {
   site: {
-    /** Production origin, used for canonical links, sitemap, and Open Graph metadata. */
-    url: 'https://example.com',
-    /** Subpath such as '/repo-name'. Keep empty when deploying at a domain root. */
-    base: '',
-    lang: 'en',
-    locale: 'en_US',
-    dateLocale: 'en-US',
-    title: 'Astro Tone',
-    logoLabel: 'Tone',
-    description: 'A minimal Astro theme for posts and notes.',
-    author: 'Alex Morgan',
-    /** Optional absolute or root-relative image URL for homepage/search/about social previews. */
-    defaultOgImage: '/og.png',
-  },
-
+  url: 'https://mingxuan-research-log.vercel.app',
+  base: '',
+  lang: 'en',
+  locale: 'en_US',
+  dateLocale: 'en-US',
+  title: 'Mingxuan Research Log',
+  logoLabel: 'Mingxuan',
+  description: 'A public learning log documenting my path toward AI and AGI research.',
+  author: 'Mingxuan Wu',
+  defaultOgImage: '/og.png',
+},
   // The logo already links to `/`. Add items here if you want visible header links.
   // Example: [{ label: 'Blog', href: '/blog' }, { label: 'About', href: '/about' }]
-  nav: [] as NavItem[],
+  nav: [
+  { label: 'Blog', href: '/blog' },
+  { label: 'About', href: '/about' },
+  { label: 'Search', href: '/search' },
+] as NavItem[],
 
   // Footer links stay visible by default so readers have a stable way to move around.
   footerNav: [
@@ -83,55 +83,55 @@ const config = {
   },
 
   social: {
-    website: 'https://hanityx.github.io/astro-tone/', // e.g. 'https://your-site.com'
-    email: '', // e.g. 'hello@your-site.com'
-    linkedin: '', // e.g. 'https://www.linkedin.com/in/yourhandle'
-    github: 'https://github.com/hanityx/astro-tone', // e.g. 'https://github.com/yourhandle'
-  },
+  website: 'https://mingxuan-research-log.vercel.app',
+  email: '',
+  linkedin: '',
+  github: 'https://github.com/mingxuanwu175-afk',
+},
 
-  about: {
-    /** Profile image URL. Leave empty to use the text-only About layout. */
-    profileImage: '',
-    name: 'Alex Morgan',
-    role: 'Writes about useful small tools and the notes behind them.',
-    location: 'Anywhere',
-    focus: 'Writing, small tools, and notes worth returning to.',
-    lead: 'Alex writes about small product decisions, interface craft, and the notes that make work easier to return to.',
-    headline: ['Made to', 'last.'],
-    statementLabel: 'Work',
-    statementTitle: 'Notes on making useful things.',
-    statement:
-      'This page is intentionally spare: a short bio, a few links, and enough context for readers who want to know who is writing.',
-    careerLabel: 'Career',
-    careerHeading: 'Career timeline',
-    career: [
-      {
-        period: 'Current',
-        title: 'Independent practice',
-        description:
-          'Designing calm interfaces, writing field notes, and helping teams clarify product surfaces.',
-      },
-      {
-        period: 'Selected',
-        title: 'Product systems',
-        description:
-          'Worked across design systems, editorial tooling, and early-stage product foundations.',
-      },
-      {
-        period: 'Elsewhere',
-        title: 'Writing and reference',
-        description:
-          'Keeping a public archive of notes, examples, and references worth returning to.',
-      },
-    ],
-    interests: [
-      'Interface systems that stay quiet until needed',
-      'Writing as a way to keep product judgment visible',
-      'Tools and habits that make long work easier to resume',
-    ],
-    interestsLabel: 'Interests',
-    interestsHeading: 'What the work keeps returning to',
-  },
+about: {
+  /** Profile image URL. Leave empty to use the text-only About layout. */
+  profileImage: '',
+  name: 'Mingxuan Wu',
+  role: 'Grade 9 student at XCL World Academy, building foundations in engineering, math, algorithms, and AI.',
+  location: 'Singapore',
+  focus: 'AI, AGI, world models, mechanistic interpretability, physics, and first-principles learning.',
+  lead: 'I document my learning process in public as I build toward long-term AI and AGI research.',
+  headline: ['Learning in', 'public.'],
+  statementLabel: 'About',
+  statementTitle: 'A public record of the process.',
+  statement:
+    'Hi, I am Mingxuan Wu, also known as Steve. I am currently building my foundation in Python engineering, mathematics, algorithms, and AI with the long-term goal of contributing to AGI research. My current focus is learning from first principles: understanding how systems work underneath the surface, not just using tools at a shallow level. This blog is where I document what I study, what I build, what I struggle with, and how my thinking changes over time. This site is not meant to present a finished version of me. It is a public record of the process.',
+  careerLabel: 'Timeline',
+  careerHeading: 'Learning timeline',
+  career: [
+    {
+      period: 'Current',
+      title: 'Foundation sprint',
+      description:
+        'Building daily foundations in Python engineering, linear algebra, probability, C++, and algorithmic thinking.',
+    },
+    {
+      period: 'Current project',
+      title: 'EduBridge',
+      description:
+        'Building an AI-guided academic tool for IB MYP students, focused on rubric-aligned thinking rather than content generation.',
+    },
+    {
+      period: 'Long-term',
+      title: 'Toward AI and AGI research',
+      description:
+        'Working toward the ability to build and understand systems that can reason about, model, and interact with the physical world.',
+    },
+  ],
+  interests: [
+    'AI systems that understand and interact with the physical world',
+    'World models and mechanistic interpretability',
+    'Physics, mathematics, and first-principles learning',
+    'Building useful educational tools with real user feedback',
+  ],
+  interestsLabel: 'Interests',
+  interestsHeading: 'What I keep returning to',
+},
 };
-
 export default config;
